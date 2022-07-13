@@ -6,15 +6,20 @@ This project is an asynchronous web app that uses MeaningCloud API to sentiment 
 
 ## Run app
 
-- clone repo
-- npm i
-- create your .env file at root with MEANINGCLOUD_LICENSE_KEY variable store your meaningclound license key. Get your key [here](https://www.meaningcloud.com/developer/sentiment-analysis).
-- npm run build-dev
-- npm start
+Clone this repo
 
-## Build app
+```
+git clone https://github.com/DamVanManh/Meaning-Cloud-Sentences.git
+```
 
-- npm run build-prod
+Create your .env file at root folder with MEANINGCLOUD_LICENSE_KEY key, which store your meaningclound license key. Get your key [here](https://www.meaningcloud.com/developer/sentiment-analysis).
+
+`cd` into your new folder and run:
+
+- `npm install`
+- `npm run build-dev` to start the webpack dev server
+- `npm run build-prod` to generate a dist folder for prod
+- `npm start` to run the Express server on port 8081
 
 ## Link demo
 
