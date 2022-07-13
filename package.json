@@ -5,7 +5,6 @@
   "scripts": {
     "test": "jest",
     "start": "node src/server/index.js",
-    "dev": "nodemon --inspect index.js",
     "build": "webpack --config webpack.prod.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server --config webpack.dev.js --open"
