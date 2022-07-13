@@ -9,10 +9,9 @@ async function handleSubmit(event) {
     document.getElementById("warning").classList.remove("visible");
   }
 
-  const sentimentRes = await Client.analysisSentiment(
-    "http://localhost:8081/analysis",
-    { text: formText }
-  );
+  const sentimentRes = await Client.analysisSentiment("/analysis", {
+    text: formText,
+  });
 
   let content = "";
 
