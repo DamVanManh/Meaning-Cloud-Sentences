@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="/styles/resets.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/form.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Meaning Cloud Sentences</h1>
+  </header>
+
+  <main>
+    <section>
+      <form class="">
+        <div class="text">
+          <input class="input" id="input" type="text" name="input" value=""
+            placeholder="Paragraph use for sentiment analysis">
+          <strong class="warning" id="warning">Paragraph is required</strong>
+        </div>
+        <input class="submit" type="submit" value="submit" onclick="return Client.handleSubmit(event)">
+      </form>
+    </section>
+    <section>
+      <h2>Form Results:</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+  <footer>
+    <h2>&copy Udacity</h2>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+</body>
+
+</html>
