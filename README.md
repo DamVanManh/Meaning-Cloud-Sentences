@@ -15,3 +15,7 @@ This project is an asynchronous web app that uses MeaningCloud API to sentiment 
 ## Build app
 
 - npm run build-prod
+
+## Link demo
+
+[heroku link](https://meaning-cloud.herokuapp.com/)
